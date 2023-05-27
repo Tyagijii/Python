@@ -14,8 +14,10 @@ def cric(player):
     if b=='q' or b=='Q':
       break
     else:
-      run = random.randint(0,9)
-      
+      if player=='name':
+        run = random.randint(7,8)
+      else :
+        run=random.randint(0,9)
       for i in [0,7,8]:
         if run==i:
           
